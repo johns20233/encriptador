@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #d0d3df;
+  font-style: "Inter";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  display: grid;
+  min-height: 100vh;
+  width: 100%;
+  grid-template-columns: 120px auto;
+}
+
+header {
+  width: 120px;
+}
+.logo {
+  padding: 10px;
+  margin-left: 10px;
+}
+
+main {
+  display: grid;
+  margin-bottom: 50px;
+  grid-template-columns: auto 400px;
+  padding: 20px;
+  gap: 30px;
+}
+.sectionone {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.munieco {
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.munieco h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+textarea {
+  background-color: transparent;
+  resize: none;
+  border: none;
+}
+.text-area {
+  color: #0a3871;
+  margin-top: 90px;
+  text-transform: lowercase;
+  font-size: 24px;
+}
+::placeholder {
+  color: #0a3871;
+}
+.text-area:focus {
+  outline: none;
+}
+
+.mensaje {
+  background: white;
+  color: #444242;
+}
+.mensaje:focus {
+  outline: none;
+}
+
+.botones {
+  display: flex;
+  margin-top: 18px;
+  gap: 30px;
+}
+
+.btn-desencriptar {
+  background: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: #0a3871;
+  cursor: pointer;
+  height: 67px;
+  width: 328px;
+}
+
+.btn-encriptar {
+  background-color: #0a3871;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: white;
+  cursor: pointer;
+  height: 67px;
+  width: 328px;
+}
+
+.sectionMuñeco {
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.copiar {
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: #0a3871;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resultado {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+@media (max-width: 1350px) {
+  body {
+    grid-template-rows: 100px auto;
+    grid-template-columns: 1fr;
+  }
+  main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .sectionMuñeco img {
+    display: none;
+  }
+}
+
+@media (max-width: 840px) {
+  .botones {
+    flex-direction: column;
+    align-items: center;
+  }
+}
